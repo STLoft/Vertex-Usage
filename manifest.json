@@ -1,0 +1,11 @@
+{
+    "display_name": "Vertex Usage",
+    "loading_order": 120,
+    "requires": [],
+    "optional": [],
+    "js": "index.js?v=0.6.3",
+    "css": "style.css?v=0.6.3",
+    "author": "STLoft",
+    "version": "0.6.3",
+    "homePage": "https://github.com/STLoft/Vertex-Usage"
+}

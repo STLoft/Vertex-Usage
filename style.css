@@ -1,0 +1,137 @@
+#vertex-usage { --vu-muted: var(--SmartThemeEmColor, #aaa); --vu-line: var(--SmartThemeBorderColor, #555); }
+#vertex-usage .inline-drawer-content { padding: 8px 0; display: flex; flex-direction: column; gap: 10px; }
+#vertex-usage .inline-drawer-content > * { margin: 0; }
+#vertex-usage label { display: flex; flex-direction: column; gap: 4px; margin: 0; font-size: .9em; min-width: 0; }
+#vertex-usage label > small, #vertex-usage legend { color: var(--vu-muted); font-size: .85em; }
+#vertex-usage .vu-check { flex-direction: row; align-items: center; gap: 8px; }
+#vertex-usage .vu-check input { margin: 0; }
+#vertex-usage .vu-toolbar { display: flex; align-items: stretch; gap: 8px; }
+#vertex-usage .vu-toolbar > select { flex: 1; min-width: 0; }
+#vertex-usage .vu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+#vertex-usage .menu_button { width: auto; height: auto; margin: 0; padding: 7px 12px; white-space: nowrap; }
+#vertex-usage .menu_button:disabled { opacity: .5; cursor: wait; }
+#vertex-usage .text_pole { width: 100%; min-width: 0; margin: 0; }
+#vertex-usage #vu-status { color: var(--vu-muted); font-size: .8em; line-height: 1.5; overflow-wrap: anywhere; }
+#vertex-usage #vu-status:empty { display: none; }
+#vertex-usage .vu-project { font-weight: 600; overflow-wrap: anywhere; margin-bottom: 8px; }
+#vertex-usage .vu-project span { display: block; color: var(--vu-muted); font-size: .8em; font-weight: normal; margin-top: 2px; }
+#vertex-usage .vu-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+#vertex-usage .vu-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+#vertex-usage .vu-card { border: 1px solid var(--vu-line); border-radius: 8px; padding: 10px; display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+#vertex-usage .vu-card small { color: var(--vu-muted); font-size: .75em; }
+#vertex-usage .vu-card b { font-size: .95em; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+#vertex-usage .vu-note, #vertex-usage .vu-meta { color: var(--vu-muted); font-size: .78em; line-height: 1.55; margin: 8px 0 0; overflow-wrap: anywhere; }
+#vertex-usage .vu-warn { color: var(--SmartThemeQuoteColor, #e6bf78); }
+#vertex-usage a { color: var(--SmartThemeQuoteColor, #e6bf78); }
+#vertex-usage .vu-models { margin-top: 10px; border-top: 1px solid var(--vu-line); }
+#vertex-usage .vu-model { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--vu-line); font-size: .85em; }
+#vertex-usage .vu-model > span:first-child { min-width: 0; overflow-wrap: anywhere; }
+#vertex-usage .vu-model small, #vertex-usage .vu-auth-row small { display: block; color: var(--vu-muted); font-size: .85em; line-height: 1.5; }
+#vertex-usage .vu-model-cost { flex: none; text-align: right; font-variant-numeric: tabular-nums; }
+#vertex-usage .vu-auth-row { display: flex; gap: 8px; justify-content: space-between; align-items: center; padding: 6px 0; }
+#vertex-usage .vu-auth-row > span { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+#vertex-usage input[type=file] { max-width: 100%; font-size: .8em; }
+#vertex-usage [hidden] { display: none !important; }
+#vertex-usage .vu-credit-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+#vertex-usage .vu-credit-heading small { color: var(--vu-muted); font-size: .78em; }
+#vertex-usage #vu-credit-summary { border-bottom: 1px solid var(--vu-line); padding-bottom: 12px; }
+#vertex-usage #vu-credit-summary:empty { display: none; }
+#vertex-usage .vu-sections > details { border-top: 1px solid var(--vu-line); }
+#vertex-usage .vu-sections > details:last-child { border-bottom: 1px solid var(--vu-line); }
+#vertex-usage details > summary { cursor: pointer; font-size: .9em; padding: 9px 0; }
+#vertex-usage details[open] > summary { padding-bottom: 6px; }
+#vertex-usage .vu-sections > details[open] { padding-bottom: 12px; }
+#vertex-usage .vu-sections form, #vertex-usage .vu-sections > details { display: flex; flex-direction: column; gap: 10px; }
+#vertex-usage .vu-sections > details:not([open]) { gap: 0; }
+#vertex-usage .vu-sections .vu-note { margin: 0; }
+#vertex-usage .vu-sections .vu-note:empty { display: none; }
+#vertex-usage .vu-sections form > .menu_button, #vertex-usage .vu-sections > details > .menu_button { align-self: flex-start; }
+#vertex-usage .vu-sub { padding-left: 10px; border-left: 2px solid var(--vu-line); }
+#vertex-usage .vu-sub > summary { padding: 4px 0; font-size: .85em; color: var(--vu-muted); }
+#vertex-usage .vu-sub[open] > :not(summary) { margin-top: 8px; }
+#vertex-usage .vu-about { margin-top: 10px; }
+#vertex-usage .vu-about > summary { font-size: .8em; color: var(--vu-muted); padding: 2px 0; }
+#vertex-usage .vu-about p { margin: 6px 0 0; }
+#vertex-usage .vu-fieldset { border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+#vertex-usage .vu-fieldset legend { padding: 0; margin-bottom: 6px; }
+#vertex-usage #vu-credit-profiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 10px; }
+#vertex-usage #vu-credit-profiles label { overflow-wrap: anywhere; }
+#vertex-usage .vu-footer { display: flex; justify-content: space-between; align-items: center; color: var(--vu-muted); font-size: .78em; }
+#vertex-usage .vu-footer .menu_button { font-size: 1.1em; padding: 5px 10px; }
+@media (max-width: 340px) { #vertex-usage .vu-cards, #vertex-usage .vu-grid, #vertex-usage #vu-credit-profiles { grid-template-columns: minmax(0, 1fr); } }
+
+/* Compact translucent panels that follow the SillyTavern theme colors. */
+#vertex-usage-floating, #vertex-usage-detail {
+    --vu-text: var(--SmartThemeBodyColor, #e8e6ee);
+    --vu-dim: var(--SmartThemeEmColor, #9a96a6);
+    --vu-panel: var(--SmartThemeBlurTintColor, #1d1d26);
+    --vu-line: color-mix(in srgb, var(--vu-text) 14%, transparent);
+    --vu-accent: var(--SmartThemeQuoteColor, #c4a6ee);
+    --vu-track: color-mix(in srgb, var(--vu-text) 12%, transparent);
+    color: var(--vu-text); font-family: inherit; box-sizing: border-box;
+}
+#vertex-usage-floating {
+    --vu-gauge: #22c55e;
+    position: fixed; z-index: 100; display: inline-flex; align-items: center; gap: 6px;
+    margin: 0; padding: 4px 10px; max-width: calc(100vw - 16px); border-radius: 999px;
+    border: 1px solid var(--vu-line); background: color-mix(in srgb, var(--vu-panel) 90%, transparent);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); box-shadow: 0 2px 8px #0003;
+    text-align: left; line-height: 1.1; font-size: 13px; white-space: nowrap;
+    cursor: pointer; user-select: none; -webkit-user-select: none; touch-action: none; font-variant-numeric: tabular-nums;
+}
+#vertex-usage-floating[hidden] { display: none; }
+#vertex-usage-floating[data-level=mid] { --vu-gauge: #f59e0b; }
+#vertex-usage-floating[data-level=low] { --vu-gauge: var(--warning, #e05561); }
+#vertex-usage-floating[data-level=pending] { --vu-gauge: var(--vu-accent); }
+#vertex-usage-floating:hover { border-color: var(--vu-accent); }
+#vertex-usage-floating:focus-visible { outline: 2px solid var(--vu-accent); outline-offset: 3px; }
+#vertex-usage-floating.vu-fl-dragging { cursor: grabbing; opacity: .85; }
+#vertex-usage-floating .vu-fl-percent { color: var(--vu-gauge); font-weight: 500; }
+#vertex-usage-floating .vu-fl-note { color: var(--vu-dim); font-size: 11px; }
+#vertex-usage-floating[data-layout=pill], #vertex-usage-floating[data-layout=bar] { font-size: 12px; }
+#vertex-usage-floating[data-layout=pill] .vu-fl-percent, #vertex-usage-floating[data-layout=bar] .vu-fl-percent { color: var(--vu-text); font-weight: 400; }
+#vertex-usage-floating[data-layout=pill] .vu-fl-note, #vertex-usage-floating[data-layout=bar] .vu-fl-note { font-size: 12px; }
+#vertex-usage-floating .vu-fl-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--vu-gauge); flex: none; }
+#vertex-usage-floating .vu-fl-ring { position: relative; display: grid; place-items: center; flex: none; }
+#vertex-usage-floating svg { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
+#vertex-usage-floating circle { fill: none; }
+#vertex-usage-floating .vu-fl-track { stroke: var(--vu-track); }
+#vertex-usage-floating .vu-fl-progress { stroke: var(--vu-gauge); stroke-linecap: round; }
+#vertex-usage-floating[data-partial=true] .vu-fl-track { stroke-dasharray: 2 3; }
+#vertex-usage-floating .vu-fl-bar { display: block; border-radius: 2px; background: var(--vu-track); overflow: hidden; }
+#vertex-usage-floating .vu-fl-fill { display: block; background: var(--vu-gauge); }
+#vertex-usage-floating[data-layout=bar] { display: inline-grid; gap: 4px; min-width: 80px; padding: 5px 9px; border-radius: 9px; }
+#vertex-usage-floating[data-layout=bar] .vu-fl-row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+#vertex-usage-floating[data-layout=bar] .vu-fl-bar { height: 3px; }
+#vertex-usage-floating[data-layout=bar] .vu-fl-fill { height: 100%; width: var(--vu-fill, 0%); }
+#vertex-usage-floating[data-layout=ring] { padding: 4px; border-radius: 50%; width: 52px; height: 52px; justify-content: center; }
+#vertex-usage-floating[data-layout=ring] .vu-fl-ring { width: 42px; height: 42px; }
+#vertex-usage-floating[data-layout=ring] .vu-fl-inner { position: relative; display: grid; justify-items: center; line-height: 1; }
+#vertex-usage-floating[data-layout=ring] .vu-fl-percent { font-size: 12px; }
+#vertex-usage-floating[data-layout=ring] .vu-fl-note { font-size: 9px; margin-top: 2px; }
+#vertex-usage-floating[data-layout=edge] { flex-direction: column; gap: 4px; width: 34px; padding: 7px 4px; border-radius: 9px 0 0 9px; border-right: 0; }
+#vertex-usage-floating[data-layout=edge][data-side=left] { border-radius: 0 9px 9px 0; border-right: 1px solid var(--vu-line); border-left: 0; }
+#vertex-usage-floating[data-layout=edge] .vu-fl-bar { width: 4px; height: 34px; display: flex; align-items: flex-end; }
+#vertex-usage-floating[data-layout=edge] .vu-fl-fill { width: 100%; height: var(--vu-fill, 0%); }
+#vertex-usage-floating[data-layout=edge] .vu-fl-percent { font-size: 11px; }
+#vertex-usage-floating[data-layout=edge] .vu-fl-note { font-size: 10px; }
+#vertex-usage-floating[data-layout=dot] { padding: 3px; border-radius: 50%; width: 30px; height: 30px; justify-content: center; }
+#vertex-usage-floating[data-layout=dot] .vu-fl-ring { width: 22px; height: 22px; }
+#vertex-usage-detail {
+    background: var(--vu-panel); border: 1px solid var(--vu-line); border-radius: 14px;
+    box-shadow: 0 16px 48px var(--SmartThemeShadowColor, #0008); padding: 16px;
+    width: min(460px, calc(100vw - 24px)); max-height: calc(100dvh - 32px); overflow: auto;
+}
+#vertex-usage-detail::backdrop { background: #0008; }
+#vertex-usage-detail header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+#vertex-usage-detail button { color: inherit; background: var(--vu-track); border: 1px solid var(--vu-line); border-radius: 6px; font-size: 20px; padding: 2px 10px; cursor: pointer; }
+#vertex-usage-detail .vu-credit-heading { display: grid; gap: 4px; margin: 0 0 10px; }
+#vertex-usage-detail .vu-card small { font-size: .75em; }
+#vertex-usage-detail .vu-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+#vertex-usage-detail .vu-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+#vertex-usage-detail .vu-card { display: grid; gap: 5px; border: 1px solid var(--vu-line); border-radius: 8px; padding: 10px; overflow-wrap: anywhere; }
+#vertex-usage-detail small, #vertex-usage-detail .vu-note { color: var(--vu-dim); font-size: .8em; line-height: 1.6; }
+#vertex-usage-detail .vu-warn { color: var(--vu-accent); }
+#vertex-usage .vu-card > span, #vertex-usage-detail .vu-card > span { display: flex; gap: 4px; align-items: baseline; min-width: 0; }
+#vertex-usage .vu-approx, #vertex-usage-detail .vu-approx { color: var(--SmartThemeEmColor, #aaa); }
+#vertex-usage .vu-model:last-child { border-bottom: 0; }
