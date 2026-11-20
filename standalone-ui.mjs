@@ -1,14 +1,14 @@
 import { getCurrentUserHandle } from '../../../user.js';
 import { BrowserVault } from './vault.mjs';
-import { importCredential, projectId, queryUsage, clearToken, MAX_LOOKBACK } from './monitoring.mjs?v=0.6.3';
+import { importCredential, projectId, queryUsage, clearToken, MAX_LOOKBACK } from './monitoring.mjs?v=0.6.4';
 import { summarizeMonitoring } from './monitoring-cost.mjs';
 import { secret_state, SECRET_KEYS } from '../../../secrets.js';
 import { getTokenCountAsync } from '../../../tokenizers.js';
 import { installLocalObserver, summarizeLocal } from './local-usage.mjs';
 import { mergeHistory, hasCoverage, summarizeCredit, retainedCalibration, balanceView } from './credit-period.mjs';
-import { createFloating, balanceMessages, LAYOUTS } from './floating-ui.mjs?v=0.6.3';
+import { createFloating, balanceMessages, LAYOUTS } from './floating-ui.mjs?v=0.6.4';
 
-const VERSION = '0.6.3';
+const VERSION = '0.6.4';
 const DAY = 86400000;
 const ctx = () => SillyTavern.getContext();
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -285,7 +285,7 @@ function buildUI() {
     <div class="vu-grid"><label><small>활성화</small><input id="vu-credit-start" class="text_pole" type="date" value="${inputDate(config().credit?.start)}" required></label><label><small>만료</small><input id="vu-credit-expires" class="text_pole" type="date" value="${inputDate(config().credit?.expires)}" required></label></div>
     <p class="vu-note">한쪽 날짜만 넣으면 다른 쪽은 90일로 채웁니다.</p>
     <fieldset class="vu-fieldset"><legend>합산할 프로필 · 같은 크레딧을 쓰는 것만</legend><div id="vu-credit-profiles"></div></fieldset>
-    <label><small>현재 Google 잔액 (USD · 선택)</small><input id="vu-credit-calibrate" class="text_pole" type="number" min="0" step="any" placeholder="이전 사용분을 반영할 때 입력"></label><p id="vu-credit-anchor" class="vu-note"></p>
+    <label><small>현재 Google 잔액 (USD · 선택)</small><input id="vu-credit-calibrate" class="text_pole" type="number" min="0" step="any" placeholder="이전 사용분을 반영할 때 입력"></label><a class="vu-note" href="https://console.cloud.google.com/billing/credits" target="_blank" rel="noopener noreferrer">Google Cloud에서 현재 크레딧 잔액 확인</a><p id="vu-credit-anchor" class="vu-note"></p>
     <button type="submit" class="menu_button">저장</button><p id="vu-credit-status" class="vu-note" role="status"></p></form></details>
     <details id="vu-floating-settings"><summary>플로팅 표시</summary>
     <label class="vu-check"><input id="vu-floating-enabled" type="checkbox" ${config().floating.enabled ? 'checked' : ''}>화면에 표시</label>

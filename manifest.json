@@ -3,9 +3,9 @@
     "loading_order": 120,
     "requires": [],
     "optional": [],
-    "js": "index.js?v=0.6.3",
-    "css": "style.css?v=0.6.3",
+    "js": "index.js?v=0.6.4",
+    "css": "style.css?v=0.6.4",
     "author": "STLoft",
-    "version": "0.6.3",
+    "version": "0.6.4",
     "homePage": "https://github.com/STLoft/Vertex-Usage"
 }
